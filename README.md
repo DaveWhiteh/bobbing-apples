@@ -69,3 +69,9 @@ The layout for the actual game will change completely. The score for the user to
 **Final Score**
 
 The last layout will revert back to the first two layouts (Start & Options) in keeping with an easy design layout, however, the top section text will contain the final score that the user managed to achieve. The middle button will allow the user to play the game again.
+
+### **Structure**
+
+The structure of the game will consist of four basic layouts that the user will navigate through via a selection of buttons and interactive gameplay. These layouts will be changed using javascript so that the experience is kept smooth and fluid throughout, rather than having four separate html pages. The layouts will be kept simple and minimalistic so that the young individuals playing the game will never feel overwhelmed when playing the game.
+
+The structure of each layout will consist of three parts. The top which will hold the instructions. These instructions will provide an explanation of what is required from the user at any given time through the different layouts. There will be a middle where the user will be provided with the options. These options allow the user to navigate through the game. Lastly the bottom which will generally consist of both the animated and interactive objects for both visual aspects and the actual gameplay. There will also consist of a footer that will contain links to both a feedback form and a link to GitHub.
