@@ -13,3 +13,29 @@ The intended user's will benefit greatly from such a game. From a teacher's pers
 ***Click **[here]()** to view the live website.***
 
 ---
+
+## User Experiences (UX)
+
+### **User Stories**
+
+**As a potential teacher/parent user:**
+
++ I want to clearly identify the instructions on how to play the game
++ I want to be able to choose between all the different word groups that are intended for phonics phase 3 set 6
++ I want the game to be simple and engaging so that the game instructions can be explained easily to young children
++ I want the game to be short due to the attention span of the attended audience
++ I want the option to be able to play again after each game has ended
+
+**As a potential 4-5 year old user:**
+
++ I want to learn the new phonics words that have been chosen
++ I want the game to be quick and simple to play
++ I want to clearly be made aware if an answer was correct or incorrect
++ I want to see what score was achieved at the end of the game
+
+**As the site owner:**
+
++ I want to create an interactive game that will aide with the teaching of phonics to children
++ I want the game to be fun and engaging with an appealing display with the use of bright bold colours
++ I want to give the user the opportunity to provide feedback about the game
++ I want to provide a unique game for teachers so that they have access to even more variety for the aide in teaching phonics
