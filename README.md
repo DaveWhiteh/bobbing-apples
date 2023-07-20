@@ -105,3 +105,24 @@ Figjam (A tool within Figma) was used to create the two flowcharts. One that loo
 <summary>Flowchart - Basic Logic</summary>
 <img src="assets/images/readme/flowchart-logic.jpg" width="1000">
 </details>
+
+### **Surface**
+
+**Colour**
+
+The base colours were chosen within Figma. Initially the background colours were chosen first which essentially represents a basic sky and grass theme. This was generated using the site [angrytools.com](https://angrytools.com/gradient/) to create the linear-gradient. Due to the main theme of the game being about red apples, both the blue (#293ACF) and the yellow (#FFFF00) were chosen as they were big, bold and bright colours that really set off against the background. These being the prime colours will help keeps things familiar to the young users.
+
+Tints and shades of these colours were found at [maketintsandshade.com](https://maketintsandshades.com/#293ACF,FFFF00).
+
+**Typography**
+
+Initially to begin with the font Mulish was found using google and was chosen because of its simplistic look. More importantly the font uses the proper English 'a'. This was an important reason because the younger user needed to be looking at the words with the correctly spelt English Language, if not this could lead to confusion causing a bad experience within the game.
+The font Mulish was then used to pair with another font that would be used for the heading of the game. This is where the font Philosopher was chosen using a site called [fontpair.co](https://www.fontpair.co/pairings/philosopher-mulish). Both these fonts are available at [Google Fonts](https://fonts.google.com/).
+
+**Images**
+
+The images were chosen carefully as they needed to be easily identifiable by the user. They required a simple look, this is why vectors were chosen. The vectors easily represent the theme of the game in terms of how the game is played in real life. Using a bucket of water with apples and either a bin or basket to put the apples in once they have been picked from the water. All the sources where the vectors came from can be found within the [credits](#credits) section.
+
+**Icons**
+
+Only one icon to be used which was from [Font Awesome](https://fontawesome.com/). The GitHub icon which will contain a link to my repository should the user want to see more work that has been developed.
