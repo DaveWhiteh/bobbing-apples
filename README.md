@@ -75,3 +75,33 @@ The last layout will revert back to the first two layouts (Start & Options) in k
 The structure of the game will consist of four basic layouts that the user will navigate through via a selection of buttons and interactive gameplay. These layouts will be changed using javascript so that the experience is kept smooth and fluid throughout, rather than having four separate html pages. The layouts will be kept simple and minimalistic so that the young individuals playing the game will never feel overwhelmed when playing the game.
 
 The structure of each layout will consist of three parts. The top which will hold the instructions. These instructions will provide an explanation of what is required from the user at any given time through the different layouts. There will be a middle where the user will be provided with the options. These options allow the user to navigate through the game. Lastly the bottom which will generally consist of both the animated and interactive objects for both visual aspects and the actual gameplay. There will also consist of a footer that will contain links to both a feedback form and a link to GitHub.
+
+### **Skeleton**
+
+To create the wireframes for the game a tool called Figma was used. This is an excellent tool that allows for a much more professional creation of not only the wireframes but also a full designed aspect of the game, providing the layouts and using the colours and images. Each set of frames was used to represent the three main devices, mobile, tablet and desktop, adopting a mobile first approach. Having the full design layout created is a huge benefit for when it is time to create the game using the respected languages, it makes it easier to visualise how and where everything fits together. Good preparation is impeccable to the success of any project!
+
+Mobile (360 x 640)<br>
+Tablet (1024 x 1366)<br>
+Desktop (1920 x 1080)
+
+<details>
+<summary>Wireframes</summary>
+<img src="assets/images/readme/wireframes.jpg" width="1000">
+</details>
+
+<details>
+<summary>Design Layout</summary>
+<img src="assets/images/readme/design_layout.jpg" width="1000">
+</details>
+
+Figjam (A tool within Figma) was used to create the two flowcharts. One that looks at the base overview of the actual game and the other that shows the basic logic of how the game works. This is an extremely important step that will help understand, how the user will interact and play the game.
+
+<details>
+<summary>Flowchart - Overview</summary>
+<img src="assets/images/readme/flowchart-overview.jpg" width="500">
+</details>
+
+<details>
+<summary>Flowchart - Basic Logic</summary>
+<img src="assets/images/readme/flowchart-logic.jpg" width="1000">
+</details>
