@@ -136,3 +136,31 @@ h1 {
 .text-footer {
     text-decoration: none;
 }
+
+/* --------------------------------------------------------------------------------------- Animations */
+
+/* 
+Floating animation was found at
+https://www.geeksforgeeks.org/css-floating-animation/
+*/
+
+.animation-float {
+    animation-name: animation-float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animation-float {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
