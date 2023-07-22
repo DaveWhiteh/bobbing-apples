@@ -27,6 +27,10 @@ h1 {
     font-weight: 700;
 }
 
+.text-extra-bold {
+    font-weight: 800;
+}
+
 /* --------------------------------------------------------------------------------------- Text Colors */
 
 .text-blue {
@@ -120,4 +124,15 @@ h1 {
 
 .image-gameplay {
     max-height: 45%;
+}
+
+/* --------------------------------------------------------------------------------------- Footer */
+
+.footer-container {
+    position: absolute;
+    bottom: 2%;
+}
+
+.text-footer {
+    text-decoration: none;
 }
