@@ -35,9 +35,28 @@ h1 {
 
 /* --------------------------------------------------------------------------------------- Buttons */
 
+.btn--cta {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .btn--mainmenu {
     font-size: 1rem;
     font-weight: 700;
+}
+
+.btn--yellow {
+    color: #293ACF;
+    background-color: #ffff00;
+    box-shadow: 1px 2px 6px #575757;
+}
+
+.btn--yellow:hover,
+.btn--yellow:active,
+.btn--yellow:focus,
+.btn--yellow:active:focus {
+    background-color: #e6e600;
+    color: #293ACF;
 }
 
 .btn--blue {
@@ -46,10 +65,27 @@ h1 {
     box-shadow: 1px 2px 6px #575757;
 }
 
+.btn--blue:hover,
+.btn--blue:active,
+.btn--blue:focus,
+.btn--blue:active:focus {
+    background-color: #212ea6;
+    color: #e6e600;
+}
+
 /* --------------------------------------------------------------------------------------- Instructions */
 
 #score {
     font-size: 2rem;
     font-weight: 700;
     color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------------------- Options */
+
+.options-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
