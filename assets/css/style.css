@@ -99,6 +99,8 @@ h1 {
 .gameplay-container {
     position: absolute;
     bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -0%);
 }
 
 .apple-container {
@@ -187,6 +189,26 @@ https://www.geeksforgeeks.org/css-floating-animation/
 
 /* Mobile Devices - Landscape */
 @media screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape) {
+    .text-header {
+        font-size: 2.5rem;
+    }
+    
+    .text-ins {
+        font-size: 0.6rem;
+    }
+
+    .btn--cta {
+        font-size: 1.5rem;
+        font-weight: 700;
+        --bs-btn-padding-y: 0.15rem;
+        --bs-btn-padding-x: 0.3rem;
+        --bs-btn-font-size: 0.3rem;
+    }
+
+    .options-container {
+        top: 35%;
+    }
+    
     .apple-barrel-container {
         position: absolute;
         bottom: 0;
@@ -215,5 +237,5 @@ https://www.geeksforgeeks.org/css-floating-animation/
         transform: translate(-50%, -30%);
         text-align: center;
     }
-    
+
 }
