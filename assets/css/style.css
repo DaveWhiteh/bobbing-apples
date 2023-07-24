@@ -189,17 +189,19 @@ https://www.geeksforgeeks.org/css-floating-animation/
 
 /* Mobile Devices - Landscape */
 @media screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape) {
+    br {
+        display: none;
+    }
+    
     .text-header {
         font-size: 2.5rem;
     }
     
     .text-ins {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .btn--cta {
-        font-size: 1.5rem;
-        font-weight: 700;
         --bs-btn-padding-y: 0.15rem;
         --bs-btn-padding-x: 0.3rem;
         --bs-btn-font-size: 0.3rem;
@@ -224,6 +226,19 @@ https://www.geeksforgeeks.org/css-floating-animation/
     .apple-container {
         width: 75%;
         margin: 0 auto;
+    }
+
+}
+
+/* Tablet / Desktop Devices - Portrait and Landscape */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    .text-header {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .text-ins {
+        font-size: 1rem;
     }
 
 }
