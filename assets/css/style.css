@@ -162,3 +162,58 @@ https://www.geeksforgeeks.org/css-floating-animation/
         transform: translate(0, -0px);
     }
 }
+
+/* --------------------------------------------------------------------------------------- Media Queries */
+
+/* Small Mobile Devices */
+@media (min-width: 280px) and (max-width: 320px) {
+    .text-ins {
+        font-size: 0.6rem;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+
+    .options-container {
+        top: 50%;
+    }
+
+    .caption {
+        top: 30%;
+    }
+
+}
+
+/* Mobile Devices - Landscape */
+@media screen and (min-width: 576px) and (max-width: 991px) and (orientation: landscape) {
+    .apple-barrel-container {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        text-align: center;
+    }
+
+    .image-gameplay {
+        width: 75%;
+    }
+
+    .apple-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Tablet / Desktop Devices - Portrait and Landscape */
+@media screen and (min-width: 992px) {
+    .apple-barrel-container {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        text-align: center;
+    }
+    
+}
