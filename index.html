@@ -29,7 +29,7 @@
 <body>
     <!-- header starts -->
     <header>
-        <div id="game-header" class="container">
+        <div id="game-header" class="container d-none">
             <div class="row">
                 <div class="col text-center">
                     <h1 class="text-header text-blue text-bold mt-3 mb-3">Bobbing Apples</h1>
@@ -43,7 +43,7 @@
     <!-- instructions start -->
     <section id="instructions">
         <!-- instructions 1 start -->
-        <div id="instructions-1" class="container">
+        <div id="instructions-1" class="container d-none">
             <div class="row text-center">
                 <div class="col-12">
                     <p class="text-ins text-blue text-bold mt-3 mb-0">Drag the apples with real words to the basket.</p>
@@ -67,7 +67,7 @@
         <!-- instructions 2 end -->
 
         <!-- instructions 3 start -->
-        <div id="instructions-3" class="container d-none">
+        <div id="instructions-3" class="container">
             <div class="row justify-content-between">
                 <div class="col-4 mt-3">
                     <button id="btn-instructions-home" type="button" data-toggle="button" class="btn btn--mainmenu btn--blue btn-lg d-flex justify-content-start align-items-center">
@@ -97,7 +97,7 @@
 
 
     <!-- options start -->
-    <section id="options" class="options-container">
+    <section id="options" class="options-container d-none">
         <!-- options 1 start -->
         <div id="options-1" class="container">
             <div class="row text-center">
@@ -148,35 +148,33 @@
     <section id="gameplay">
 
         <!-- gameplay 1 starts -->
-        <div id="gameplay-1" class="container gameplay-container">
+        <div id="gameplay-1" class="container gameplay-container d-none">
             <div class="row">
-                <div class="col-9 col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4 mx-auto">
-                    <img class="w-100 animation-float mb-3" src="assets/images/apple-collective.webp" alt="collection of apples bobbing">
-                    <img class="w-100" src="assets/images/barrel.webp" alt="barrel of water">
+                <div class="col-9 col-sm-5 col-md-6 col-lg-5 col-xl-4 col-xxl-4 mx-auto">
+                    <img class="image-gameplay animation-float mb-3" src="assets/images/apple-collective.webp" alt="collection of apples bobbing">
+                    <img class="image-gameplay" src="assets/images/barrel.webp" alt="barrel of water">
                 </div>
             </div>
         </div>
         <!-- gameplay 1 ends -->
 
         <!-- gameplay 2 starts -->
-        <div id="gameplay-2" class="d-none">
-            <div class="container mt-3 mt-sm-5">
+        <div id="gameplay-2" class="">
+            <div class="container-fluid gameplay-container mt-3 mt-sm-5">
                 <div class="row text-center">
-                    <div class="col-9 col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4 mx-auto">
+                    <div class="col-9 col-sm-5 col-md-6 col-lg-5 col-xl-3 col-xxl-3 mx-auto">
                         <div id="" class="apple-container">
                             <img class="image-apple mb-3" src="assets/images/apple.webp" alt="apple containing the words">
                             <div class="caption">Gas</div>
                         </div>
-                        <img class="w-100" src="assets/images/barrel.webp" alt="barrel of water">
+                        <img class="image-gameplay" src="assets/images/barrel.webp" alt="barrel of water">
                     </div>
                 </div>
-            </div>
-            <div class="container gameplay-container">
                 <div class="row text-center justify-content-between">
-                    <div class="col-4 d-flex justify-content-start align-items-end">
+                    <div class="col-5 col-sm-3 col-md-4 col-lg-3 col-xl-2 col-xxl-2 d-flex justify-content-start">
                         <img class="image-gameplay" src="assets/images/rubbish-bin-fake.webp" alt="rubbish bin for fake words">
                     </div>
-                    <div class="col-4 d-flex justify-content-end align-items-end">
+                    <div class="col-5 col-sm-3 col-md-4 col-lg-3 col-xl-2 col-xxl-2 d-flex justify-content-end">
                         <img class="image-gameplay" src="assets/images/basket-real.webp" alt="Basket for real words">
                     </div>
                 </div>
