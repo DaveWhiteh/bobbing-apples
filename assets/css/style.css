@@ -23,6 +23,11 @@ h1 {
     font-size: 0.8rem;
 }
 
+.text-ins-score {
+    font-size: 5rem;
+    margin-top: -1.5rem;
+}
+
 .text-bold {
     font-weight: 700;
 }
@@ -40,7 +45,7 @@ h1 {
 /* --------------------------------------------------------------------------------------- Buttons */
 
 .btn--cta {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -170,7 +175,16 @@ https://www.geeksforgeeks.org/css-floating-animation/
 /* Small Mobile Devices */
 @media (min-width: 280px) and (max-width: 320px) {
     .text-ins {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .text-ins-score {
+        font-size: 3rem;
+    }
+
+    .btn--cta {
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     #score {
@@ -178,7 +192,7 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .options-container {
-        top: 50%;
+        top: 40%;
     }
 
     .caption {
@@ -199,6 +213,11 @@ https://www.geeksforgeeks.org/css-floating-animation/
     
     .text-ins {
         font-size: 0.8rem;
+    }
+
+    .text-ins-score {
+        font-size: 4rem;
+        margin-top: -2rem;
     }
 
     .btn--cta {
@@ -241,6 +260,10 @@ https://www.geeksforgeeks.org/css-floating-animation/
         font-size: 1rem;
     }
 
+    .text-ins-score {
+        font-size: 6rem;
+    }
+
 }
 
 /* Tablet / Desktop Devices - Portrait and Landscape */
@@ -253,4 +276,13 @@ https://www.geeksforgeeks.org/css-floating-animation/
         text-align: center;
     }
 
+    .text-ins {
+        font-size: 1.2rem;
+    }
+
+    .text-ins-score {
+        font-size: 8rem;
+    }
+
 }
+
