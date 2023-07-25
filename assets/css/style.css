@@ -229,6 +229,11 @@ https://www.geeksforgeeks.org/css-floating-animation/
     .options-container {
         top: 30%;
     }
+
+    .caption {
+        top: 35%;
+        font-size: 1.5rem;
+    }
     
     .apple-barrel-container {
         position: absolute;
@@ -294,6 +299,10 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .caption {
+        font-size: 2.5rem;
+    }
+
+    #score {
         font-size: 2.5rem;
     }
 
