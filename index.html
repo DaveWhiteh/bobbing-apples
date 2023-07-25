@@ -183,7 +183,7 @@
     </section>
     <!-- gameplay ends -->
 
-    
+
     <!-- feedback modular starts -->
     <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -194,7 +194,7 @@
                 </div>
                 <div class="modal-body">
                     <form id="contact" onsubmit="return sendMail(this);">
-                        <p>Please get in touch with any feedback or suggestions on how the game could be improved.</p>
+                        <p>Please get in touch with any feedback or suggestions on how this game could be improved.</p>
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="fullname" name="name" placeholder="Name"
                                 aria-label="Enter name" required>
@@ -224,7 +224,9 @@
         <div class="container-fluid footer-container">
             <div class="row">
                 <div class="col text-center">
-                    <a id="btn-contact" class="text-footer text-extra-bold text-blue">Contact the Developer</a>
+                    <a id="btn-contact" class="text-footer text-extra-bold text-blue" href="#modal-contact" data-bs-toggle="modal" data-bs-target="#modal-contact">
+                        Contact the Developer
+                    </a>
                     <a class="text-footer text-extra-bold text-blue" href="https://github.com/davewhiteh" aria-label="Link to the developers GitHub page" rel="noreferrer noopener" 
                     target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
                 </div>
@@ -237,6 +239,8 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5.2 script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
