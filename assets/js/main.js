@@ -4,6 +4,17 @@
 $("#options-1-start").on("click", startButton);
 
 
+// On click event for the four option buttons to initiate function
+$(".btn-options").click(function() {
+    // Get button ID and store this in arrayWords variable
+    arrayWords = this.id;
+    // For testing purposes
+    console.log(arrayWords);
+    // Call function to load random word
+    loadWords(arrayWords);
+    // Call function to load gameplay display
+    optionButton();
+});
 
 
 // ----------------------------------------------------------------- Functions -------------------------------------------------------------- //
@@ -20,4 +31,39 @@ function startButton() {
     $("#instructions-2").show();
     $("#options-2").removeClass("d-none");
     $("#options-2").show();
+}
+
+/**
+ * Function to change the game display
+ * from the options to gameplay layout
+ */
+function optionButton() {
+    $("#instructions-2").hide();
+    $("#options-2").hide();
+    $("#gameplay-1").hide();
+    $("#instructions-3").removeClass("d-none");
+    $("#instructions-3").show();
+    $("#gameplay-2").removeClass("d-none");
+    $("#gameplay-2").show();
+}
+
+/**
+ * Function to load a random word
+ * for the chosen group of words
+ */
+function loadWords(arrayWords) {
+    if (arrayWords === "jWords") {
+        randomWord = jWords[Math.floor(Math.random() * jWords.length)];
+    } else if (arrayWords === "vWords") {
+        randomWord = vWords[Math.floor(Math.random() * vWords.length)];
+    } else if (arrayWords === "wWords") {
+        randomWord = wWords[Math.floor(Math.random() * wWords.length)];
+    } else if (arrayWords === "xWords") {
+        randomWord = xWords[Math.floor(Math.random() * xWords.length)];
+    }
+    // For testing purposes
+    console.log(randomWord);
+
+    // Add random word to the caption div
+    $(".caption").text(randomWord);
 }
