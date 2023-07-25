@@ -202,8 +202,8 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .btn--cta {
-        --bs-btn-padding-y: 0.15rem;
-        --bs-btn-padding-x: 0.3rem;
+        --bs-btn-padding-y: 0.10rem;
+        --bs-btn-padding-x: 0.5rem;
         --bs-btn-font-size: 0.3rem;
     }
 
