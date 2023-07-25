@@ -1,3 +1,8 @@
+// ----------------------------------------------------------------- Variables --------------------------------------------------------------- //
+
+let arrayWords = "";
+let randomWord = "";
+
 // ------------------------------------------------------------------ Events ----------------------------------------------------------------- //
 
 
@@ -89,7 +94,7 @@ function loadWords(arrayWords) {
  * Function to drag the apple
  * to one of the chosen containers
  */
-$(function() {
+function dragApple() {
     $('.draggable').draggable({
         containment: 'document',
         snap: '#rubbish-bin,#basket',
@@ -106,4 +111,24 @@ $(function() {
             console.log("fake")
         }
     });
-});
+};
+
+/**
+ * Function to check if the
+ * random word is real or fake
+ */
+function checkRealFake(container) {
+    if (container === "real") {
+        if ($.inArray(randomWord, realWords) > -1) {
+            return true;
+        } else {
+            return false;
+        }
+    } else if (container === "fake") {
+        if ($.inArray(randomWord, fakeWords) > -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+};
