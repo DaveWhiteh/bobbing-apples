@@ -264,6 +264,10 @@ https://www.geeksforgeeks.org/css-floating-animation/
         font-size: 6rem;
     }
 
+    .caption {
+        font-size: 2rem;
+    }
+
 }
 
 /* Tablet / Desktop Devices - Portrait and Landscape */
@@ -287,6 +291,10 @@ https://www.geeksforgeeks.org/css-floating-animation/
 
     .text-ins-score {
         font-size: 8rem;
+    }
+
+    .caption {
+        font-size: 2.5rem;
     }
 
 }
