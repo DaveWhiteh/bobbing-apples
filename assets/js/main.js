@@ -1,7 +1,12 @@
 // ----------------------------------------------------------------- Variables --------------------------------------------------------------- //
 
+
 let arrayWords = "";
 let randomWord = "";
+
+const soundReal = new Audio("assets/sounds/real.mp3");
+const soundFake = new Audio("assets/sounds/fake.mp3");
+
 
 // ------------------------------------------------------------------ Events ----------------------------------------------------------------- //
 
@@ -132,3 +137,11 @@ function checkRealFake(container) {
         }
     }
 };
+
+/**
+ * Function to update the score
+ * if the answer is correct
+ */
+function updateScore() {
+    parseInt($(".score-number").val()) + 1;
+}
