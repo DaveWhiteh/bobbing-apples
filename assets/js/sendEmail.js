@@ -10,9 +10,12 @@ function sendMail(contactForm) {
             function(response) {
                 console.log("SUCCESS", response.status, response.text);
                 $("#modal-contact").modal('hide');
+                $("#modal-contact-success").modal('show');
             },
             function(error) {
                 console.log("FAILED", error);
+                $("#modal-contact").modal('hide');
+                $("modal-contact-fail").modal('show');
             }
         );
     return false;
