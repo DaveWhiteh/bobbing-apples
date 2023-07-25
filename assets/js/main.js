@@ -84,3 +84,26 @@ function loadWords(arrayWords) {
     // Add random word to the caption div
     $(".caption").text(randomWord);
 }
+
+/**
+ * Function to drag the apple
+ * to one of the chosen containers
+ */
+$(function() {
+    $('.draggable').draggable({
+        containment: 'document',
+        snap: '#rubbish-bin,#basket',
+        snapMode: 'inner',
+        revert: true
+    });
+    $(".droppable-real").droppable({
+        drop: function() {
+            console.log("real")
+        }
+    });
+    $(".droppable-fake").droppable({
+        drop: function() {
+            console.log("fake")
+        }
+    });
+});
