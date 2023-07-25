@@ -184,7 +184,7 @@
     <!-- gameplay ends -->
 
 
-    <!-- feedback modular starts -->
+    <!-- feedback starts -->
     <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -216,7 +216,45 @@
             </div>
         </div>
     </div>
-    <!-- feedback modular ends -->
+    <!-- feedback ends -->
+    
+    <!-- feedback success starts -->
+    <div class="modal" id="modal-contact-success" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title text-blue text-bold">Success</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Your message has been sent successfully, thankyou for your feedback.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- feedback success ends -->
+
+    <!-- feedback fail starts -->
+    <div class="modal" id="modal-contact-fail" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title text-blue text-bold">Fail</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Your message has failed to send, please try again.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- feedback fail ends -->
 
 
     <!-- footer starts -->
