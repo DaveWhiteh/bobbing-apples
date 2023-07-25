@@ -220,14 +220,15 @@
     
     <!-- feedback success starts -->
     <div class="modal" id="modal-contact-success" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h2 class="modal-title text-blue text-bold">Success</h2>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Your message has been sent successfully, thankyou for your feedback.</p>
+              <p>Your message has been sent successfully.</p>
+              <p>Thankyou for your feedback.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -239,17 +240,19 @@
 
     <!-- feedback fail starts -->
     <div class="modal" id="modal-contact-fail" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h2 class="modal-title text-blue text-bold">Fail</h2>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Your message has failed to send, please try again.</p>
+              <p>Your message has failed to send.</p>
+              <p>Please try again.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" href="#modal-contact" data-bs-toggle="modal" data-bs-target="#modal-contact">Retry</button>
             </div>
           </div>
         </div>
