@@ -276,6 +276,11 @@ https://www.geeksforgeeks.org/css-floating-animation/
         text-align: center;
     }
 
+    .text-header {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
     .text-ins {
         font-size: 1.2rem;
     }
