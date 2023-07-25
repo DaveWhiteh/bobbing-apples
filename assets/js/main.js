@@ -1,5 +1,6 @@
 // ------------------------------------------------------------------ Events ----------------------------------------------------------------- //
 
+
 // On click event for start button to change display to options layout
 $("#options-1-start").on("click", startButton);
 
@@ -16,8 +17,12 @@ $(".btn-options").click(function() {
     optionButton();
 });
 
+// On click event for home button to change display back to options layout
+$("#btn-instructions-home").on("click", returnToMenu);
+
 
 // ----------------------------------------------------------------- Functions -------------------------------------------------------------- //
+
 
 /**
  * Function to change the game display 
@@ -45,6 +50,18 @@ function optionButton() {
     $("#instructions-3").show();
     $("#gameplay-2").removeClass("d-none");
     $("#gameplay-2").show();
+}
+
+/**
+ * Function to change the game display
+ * from the gameplay back to the options layout
+ */
+function returnToMenu() {
+    $("#instructions-3").hide();
+    $("#gameplay-2").hide();
+    $("#instructions-2").show();
+    $("#options-2").show();
+    $("#gameplay-1").show();
 }
 
 /**
