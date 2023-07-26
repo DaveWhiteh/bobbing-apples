@@ -15,7 +15,6 @@ const soundFake = new Audio("assets/sounds/fake.mp3");
 // On click event for start button to change display to options layout
 $("#options-1-start").on("click", startButton);
 
-
 // On click event for the four option buttons to initiate function
 $(".btn-options").click(function() {
     // Get button ID and store this in arrayWords variable
@@ -31,6 +30,17 @@ $(".btn-options").click(function() {
 
 // On click event for home button to change display back to options layout
 $("#btn-instructions-home").on("click", returnToMenu);
+
+// On click event for the four option buttons to initiate function
+$("#options-3-again").click(function() {
+    // Reset variables
+    arrayWords = "";
+    randomWord = "";
+    wordCount = 0;
+
+    // Return to the start layout display
+    returnToStart();
+});
 
 
 // ----------------------------------------------------------------- Functions -------------------------------------------------------------- //
@@ -133,6 +143,18 @@ function finalScoreDisplay() {
     $("#options-3").show();
     $("#gameplay-1").show();   
 };
+
+/**
+ * Function to change the game display
+ * from the final score to the start layout
+ */
+function returnToStart() {
+    $("#instructions-4").hide();
+    $("#options-3").hide();
+    $("#game-header").show();
+    $("#instructions-1").show();
+    $("#options-1").show();
+}
 
 /**
  * Function to load a random word
