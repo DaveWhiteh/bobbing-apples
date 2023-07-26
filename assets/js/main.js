@@ -3,6 +3,7 @@
 
 let arrayWords = "";
 let randomWord = "";
+let wordCount = 0;
 
 const soundReal = new Audio("assets/sounds/real.mp3");
 const soundFake = new Audio("assets/sounds/fake.mp3");
@@ -33,6 +34,31 @@ $("#btn-instructions-home").on("click", returnToMenu);
 
 // ----------------------------------------------------------------- Functions -------------------------------------------------------------- //
 
+
+/**
+ * Function to play the game by
+ * iterating through a while loop
+ */
+function playGame() {
+    while (wordCount < 10) {
+        // Drag the apple to the designated container
+        let container = dragApple();
+        // Check which if the word was placed into the correct container
+        let realFake = checkRealFake(container);
+
+        // If the answer is correct then play real sound and update the score
+        if (realFake === true) {
+            soundReal.play();
+            updateScore();
+        // If the answer is not correct then play fake sound only    
+        } else if (realFake === false) {
+            soundFake.play();
+        }
+        // Increment the word count
+        wordCount++;
+    }
+
+};
 
 /**
  * Function to change the game display 
@@ -108,12 +134,14 @@ function dragApple() {
     });
     $(".droppable-real").droppable({
         drop: function() {
-            console.log("real")
+            console.log("real");
+            return "real";
         }
     });
     $(".droppable-fake").droppable({
         drop: function() {
-            console.log("fake")
+            console.log("fake");
+            return "fake";
         }
     });
 };
