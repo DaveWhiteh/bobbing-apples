@@ -92,7 +92,7 @@ function startButton() {
     $("#instructions-2").show();
     $("#options-2").removeClass("d-none");
     $("#options-2").show();
-}
+};
 
 /**
  * Function to change the game display
@@ -106,7 +106,7 @@ function optionButton() {
     $("#instructions-3").show();
     $("#gameplay-2").removeClass("d-none");
     $("#gameplay-2").show();
-}
+};
 
 /**
  * Function to change the game display
@@ -118,7 +118,7 @@ function returnToMenu() {
     $("#instructions-2").show();
     $("#options-2").show();
     $("#gameplay-1").show();
-}
+};
 
 /**
  * Function to load a random word
@@ -139,7 +139,7 @@ function loadWords(arrayWords) {
 
     // Add random word to the caption div
     $(".caption").text(randomWord);
-}
+};
 
 /**
  * Function to check if the
@@ -185,5 +185,17 @@ function updateScore(answer) {
     if (answer === true) {
         score++;
         $("#score-number").text(score);
+    }
+};
+
+/**
+ * Function to check how
+ * many words have been used
+ */
+function checkWordCount() {
+    if (wordCount == 10) {
+        finishGame();
+    } else {
+        playGame();
     }
 };
