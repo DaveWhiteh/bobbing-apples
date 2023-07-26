@@ -41,7 +41,7 @@ $("#btn-instructions-home").on("click", returnToMenu);
  */
 function playGame() {
     $('.draggable').draggable({
-        snap: '#rubbish-bin,#basket',
+        snap: '#fake,#real',
         snapMode: 'inner',
         revert: "invalid"
     });
