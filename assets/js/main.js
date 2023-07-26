@@ -51,18 +51,18 @@ function playGame() {
             ui.draggable.hide();
 
             // Get the id of the droppable element
-            let container = this.id;
-            console.log(container);
+            let dragDropElement = this.id;
+            console.log(dragDropElement);
 
             // Check if random word is correct or not
-            let realFake = checkRealFake(container);
-            console.log(realFake);
+            let answer = checkAnswer(dragDropElement);
+            console.log(answer);
 
             // Play the relevant sound depending on whether the answer is correct or not
-            playSound(realFake);
+            playSound(answer);
 
             // Update the score shown in game
-            updateScore(realFake);
+            updateScore(answer);
 
             // Increment how many words have been answered
             wordCount++;
@@ -145,23 +145,23 @@ function loadWords(arrayWords) {
  * Function to check if the
  * random word is real or fake
  */
-function checkRealFake(container) {
-    let wordRealFake;
-    if (container === "real") {
-        if ($.inArray(randomWord, realWords) > -1) {
-            wordRealFake = true;
+function checkAnswer(dragDropElement) {
+    let checkWord;
+    if (dragDropElement === "real") {
+        if (jQuery.inArray(randomWord, realWords) > -1) {
+            checkWord = true;
         } else {
-            wordRealFake = false;
+            checkWord = false;
         }
-    } else if (container === "fake") {
-        if ($.inArray(randomWord, fakeWords) > -1) {
-            wordRealFake = true;
+    } else if (dragDropElement === "fake") {
+        if (jQuery.inArray(randomWord, fakeWords) > -1) {
+            checkWord = true;
         } else {
-            wordRealFake = false;
+            checkWord = false;
         }
     }
 
-    return wordRealFake;
+    return checkWord;
 };
 
 /**
