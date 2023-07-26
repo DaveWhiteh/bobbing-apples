@@ -165,6 +165,18 @@ function checkAnswer(dragDropElement) {
 };
 
 /**
+ * Function to play sound
+ * depending on the answer
+ */
+function playSound(answer) {
+    if (answer === true) {
+        soundReal.play();
+    } else if (answer === false) {
+        soundFake.play();
+    }
+};
+
+/**
  * Function to update the score
  * if the answer is correct
  */
