@@ -37,28 +37,47 @@ $("#btn-instructions-home").on("click", returnToMenu);
 
 
 /**
- * Function to play the game by
- * iterating through a while loop
+ * Function to play the game
  */
 function playGame() {
-    while (wordCount < 10) {
-        // Drag the apple to the designated container
-        let container = dragApple();
-        // Check which if the word was placed into the correct container
-        let realFake = checkRealFake(container);
+    $('.draggable').draggable({
+        snap: '#rubbish-bin,#basket',
+        snapMode: 'inner',
+        revert: "invalid"
+    });
+    $(".droppable-real, .droppable-fake").droppable({
+        drop: function(event, ui) {
+            // Hides the draggable element
+            ui.draggable.hide();
 
-        // If the answer is correct then play real sound and update the score
-        if (realFake === true) {
-            soundReal.play();
-            updateScore();
-        // If the answer is not correct then play fake sound only    
-        } else if (realFake === false) {
-            soundFake.play();
+            // Get the id of the droppable element
+            let container = this.id;
+            console.log(container);
+
+            // Check if random word is correct or not
+            let realFake = checkRealFake(container);
+            console.log(realFake);
+
+            // Play the relevant sound depending on whether the answer is correct or not
+            playSound(realFake);
+
+            // Update the score shown in game
+            updateScore(realFake);
+
+            // Increment how many words have been answered
+            wordCount++;
+            console.log(wordCount);
+
+            // Check how many words have been answered
+            checkWordCount();
+
+            // Load new random word
+            loadWords(arrayWords);
+
+            // Shows the draggable element
+            showApple();
         }
-        // Increment the word count
-        wordCount++;
-    }
-
+    });
 };
 
 /**
@@ -121,34 +140,6 @@ function loadWords(arrayWords) {
     // Add random word to the caption div
     $(".caption").text(randomWord);
 }
-
-/**
- * Function to drag the apple
- * to one of the chosen containers
- */
-function dragApple() {
-    let containerRealFake = "";
-    $('.draggable').draggable({
-        containment: 'document',
-        snap: '#rubbish-bin,#basket',
-        snapMode: 'inner',
-        revert: true
-    });
-    $(".droppable-real").droppable({
-        drop: function() {
-            console.log("real");
-            containerRealFake = "real";
-        }
-    });
-    $(".droppable-fake").droppable({
-        drop: function() {
-            console.log("fake");
-            containerRealFake = "fake";
-        }
-    });
-
-    return containerRealFake;
-};
 
 /**
  * Function to check if the
