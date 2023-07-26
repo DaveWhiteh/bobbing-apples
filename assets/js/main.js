@@ -121,6 +121,20 @@ function returnToMenu() {
 };
 
 /**
+ * Function to change the game display
+ * from the gameplay to the final score layout
+ */
+function finalScoreDisplay() {
+    $("#gameplay-2").hide();    
+    $("#instructions-3").hide();
+    $("#instructions-4").removeClass("d-none");
+    $("#instructions-4").show();
+    $("#options-3").removeClass("d-none");
+    $("#options-3").show();
+    $("#gameplay-1").show();   
+};
+
+/**
  * Function to load a random word
  * for the chosen group of words
  */
@@ -200,10 +214,24 @@ function checkWordCount() {
     }
 };
 
+/**
+ * Function to show the apple
+ * and new random word
+ */
 function showApple() {
     $("#apple").css({
         top: "0px",
         left: "0px"
     });
     $("#apple").delay(750).fadeIn();
+};
+
+/**
+ * Function to get and show final score
+ */
+function finishGame() {
+    let finalScore = $("#score-number").text();
+    $("#final-score").text(finalScore);
+
+    finalScoreDisplay(); 
 };
