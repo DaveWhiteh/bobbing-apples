@@ -180,6 +180,10 @@ function playSound(answer) {
  * Function to update the score
  * if the answer is correct
  */
-function updateScore() {
-    parseInt($(".score-number").val()) + 1;
-}
+function updateScore(answer) {
+    let score = $("#score-number").text();
+    if (answer === true) {
+        score++;
+        $("#score-number").text(score);
+    }
+};
