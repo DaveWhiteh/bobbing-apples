@@ -26,6 +26,7 @@ $(".btn-options").click(function() {
     loadWords(arrayWords);
     // Call function to load gameplay display
     optionButton();
+    playGame();
 });
 
 // On click event for home button to change display back to options layout
@@ -126,6 +127,7 @@ function loadWords(arrayWords) {
  * to one of the chosen containers
  */
 function dragApple() {
+    let containerRealFake = "";
     $('.draggable').draggable({
         containment: 'document',
         snap: '#rubbish-bin,#basket',
@@ -135,15 +137,17 @@ function dragApple() {
     $(".droppable-real").droppable({
         drop: function() {
             console.log("real");
-            return "real";
+            containerRealFake = "real";
         }
     });
     $(".droppable-fake").droppable({
         drop: function() {
             console.log("fake");
-            return "fake";
+            containerRealFake = "fake";
         }
     });
+
+    return containerRealFake;
 };
 
 /**
@@ -151,19 +155,22 @@ function dragApple() {
  * random word is real or fake
  */
 function checkRealFake(container) {
+    let wordRealFake;
     if (container === "real") {
         if ($.inArray(randomWord, realWords) > -1) {
-            return true;
+            wordRealFake = true;
         } else {
-            return false;
+            wordRealFake = false;
         }
     } else if (container === "fake") {
         if ($.inArray(randomWord, fakeWords) > -1) {
-            return true;
+            wordRealFake = true;
         } else {
-            return false;
+            wordRealFake = false;
         }
     }
+
+    return wordRealFake;
 };
 
 /**
