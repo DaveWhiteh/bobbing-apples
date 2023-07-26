@@ -199,3 +199,11 @@ function checkWordCount() {
         playGame();
     }
 };
+
+function showApple() {
+    $("#apple").css({
+        top: "0px",
+        left: "0px"
+    });
+    $("#apple").delay(750).fadeIn();
+};
