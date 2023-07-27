@@ -54,7 +54,8 @@ $("#options-3-again").click(function() {
 function playGame() {
     $('.draggable').draggable({
         snapMode: 'inner',
-        revert: "invalid"
+        revert: "invalid",
+        cursor: "pointer"
     });
     $(".droppable-real, .droppable-fake").droppable({
         drop: function(event, ui) {
