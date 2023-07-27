@@ -247,7 +247,7 @@ function showApple() {
         top: "0px",
         left: "0px"
     });
-    $("#apple").delay(1500).fadeIn();
+    $("#apple").delay(2000).fadeIn();
 };
 
 /**
