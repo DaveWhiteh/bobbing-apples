@@ -20,7 +20,7 @@ h1 {
 }
 
 .text-ins {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .text-ins-score {
@@ -94,9 +94,10 @@ h1 {
 
 .options-container {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 /* --------------------------------------------------------------------------------------- Gameplay */
@@ -174,8 +175,12 @@ https://www.geeksforgeeks.org/css-floating-animation/
 
 /* Small Mobile Devices */
 @media (min-width: 280px) and (max-width: 320px) {
+    .text-header {
+        font-size: 2.5rem;
+    }
+    
     .text-ins {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .text-ins-score {
@@ -185,6 +190,8 @@ https://www.geeksforgeeks.org/css-floating-animation/
     .btn--cta {
         font-size: 1rem;
         font-weight: 700;
+        --bs-btn-padding-y: 0.10rem;
+        --bs-btn-padding-x: 0.5rem;
     }
 
     #score {
@@ -192,7 +199,7 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .options-container {
-        top: 40%;
+        top: 35%;
     }
 
     .caption {
@@ -227,7 +234,7 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .options-container {
-        top: 30%;
+        top: 28%;
     }
 
     .caption {
