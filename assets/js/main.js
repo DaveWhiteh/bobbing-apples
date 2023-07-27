@@ -53,7 +53,6 @@ $("#options-3-again").click(function() {
  */
 function playGame() {
     $('.draggable').draggable({
-        snap: '#fake,#real',
         snapMode: 'inner',
         revert: "invalid"
     });
