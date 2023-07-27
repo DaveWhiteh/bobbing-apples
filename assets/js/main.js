@@ -28,18 +28,20 @@ $(".btn-options").click(function() {
     playGame();
 });
 
-// On click event for home button to change display back to options layout
-$("#btn-instructions-home").on("click", returnToMenu);
+// On click event for home button to reset game and change display
+$("#btn-instructions-home").click(function() {
+    // Return to the options layout display
+    returnToMenu();
+    // Reset the game variables
+    resetGame();
+});
 
 // On click event for the four option buttons to initiate function
 $("#options-3-again").click(function() {
-    // Reset variables
-    arrayWords = "";
-    randomWord = "";
-    wordCount = 0;
-
     // Return to the start layout display
     returnToStart();
+    // Reset the game variables
+    resetGame();
 });
 
 
@@ -154,7 +156,7 @@ function returnToStart() {
     $("#game-header").show();
     $("#instructions-1").show();
     $("#options-1").show();
-}
+};
 
 /**
  * Function to load a random word
@@ -245,7 +247,7 @@ function showApple() {
         top: "0px",
         left: "0px"
     });
-    $("#apple").delay(750).fadeIn();
+    $("#apple").delay(1500).fadeIn();
 };
 
 /**
@@ -256,4 +258,19 @@ function finishGame() {
     $("#final-score").text(finalScore);
 
     finalScoreDisplay(); 
+};
+
+
+function resetGame() {
+    arrayWords = "";
+    console.log(arrayWords);
+
+    randomWord = "";
+    console.log(randomWord);
+
+    wordCount = 0;
+    console.log(wordCount);
+
+    $("#score-number").text("0");
+    $("#final-score").text("0");
 };
