@@ -105,8 +105,9 @@ h1 {
 .gameplay-container {
     position: absolute;
     bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -0%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .apple-container {
