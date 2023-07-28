@@ -497,7 +497,7 @@ The game was tested on the following live devices:
 + **iiyama desktop monitor - 1920x1080 resolution**
     + the game performed well on a desktop, running smoothly throughout.
 + **Google Pixel 5**
-    + the game was tested thoroughly on this mobile device. The game is smooth and responsive throughout on both orientations. There was an issue early on whereby when dragging the apple to one of the containers it was quite sluggish (for details please click [here](#sluggish-when-dragging-apple)).
+    + the game was tested thoroughly on this mobile device. The game is smooth and responsive throughout on both orientations. There was an issue early on whereby when dragging the apple to one of the containers it was quite sluggish (for details please click [here](#gameplay---sluggish-when-dragging-apple)).
 + **Google Pixel 6a**
     + this mobile device was used to test by a different user. They commented on how easy the game was to play and how visually it looks great that would definitely appeal to a younger audience.
 + **Amazon Fire Tablet HD**
@@ -555,3 +555,23 @@ The game performed well in the Lighthouse test for the desktop.
 </details>
 
 The game performance dipped slightly for mobile device on the first test. The score for performance was only 86. To get a better performance for mobile the jQuery CDN script was changed to a minified version. This helped raise the performance quite a bit on the second test.
+
+### **Bugs and Fixes**
+
+#### **Gameplay - sluggish when dragging apple**
+
+This was an issue picked up in early testing.
+
+***Issue/Feature*** - When the apple in-game was dragged it was quite sluggish.
+
+<details>
+<summary>Code Before</summary>
+<img src="assets/images/readme/bugsfixes-applesluggish-issue.jpg" width="350">
+</details>
+
+***Resolution*** - Removed the snap event in the draggable section of the playGame function. The apple when dragged has now resulted in a very smooth draggable experience.
+
+<details>
+<summary>Code After</summary>
+<img src="assets/images/readme/bugsfixes-applesluggish-resolution.jpg" width="350">
+</details>
