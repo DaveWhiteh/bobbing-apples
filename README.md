@@ -128,3 +128,91 @@ The images were chosen carefully as they needed to be easily identifiable by the
 **Icons**
 
 Only one icon to be used which was from [Font Awesome](https://fontawesome.com/). The GitHub icon which will contain a link to my repository should the user want to see more work that has been developed.
+
+---
+
+## Features
+
+### **Main Header**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-header.jpg" width="250">
+</details>
+
++ The header only features on the start page and is bold and prominent using the games prime colour blue which works well against the light background. The user will easily be able to identify the name of the game.
+
+### **Instructions**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-instructions-start.jpg" width="250">
+
+<img src="assets/images/readme/features-instructions-options.jpg" width="250">
+</details>
+
++ The instructions can be found at the top of the page, again utilising the primary blue colour, setting the tone for consistency and using the font mulish that is easily readable for both sets of users. The main user at this point will be that of an older user who will clearly be able to understand the instructions and easily be able to explain this to their younger audience.
+
+### **Buttons**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-button-start.jpg" width="100">
+
+<img src="assets/images/readme/features-button-options.jpg" width="250">
+
+<img src="assets/images/readme/features-button-menu.jpg" width="100">
+
+<img src="assets/images/readme/features-button-playagain.jpg" width="100">
+</details>
+
++ The buttons throughout the game are mainly bright and bold, using the colour yellow to make them stand out on each page. They are generally central on each page, allowing them to be the main focus. This is with the exception of the menu button which is found on the actual in game page on the top left. This uses a darker blue so that this gives off a duller tone. This has been done so that the focus remains on the all important gameplay of the red apple.
+
+### **Current Score**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-ingame-score.jpg" width="250">
+</details>
+
++ The score can be found on the in game page that features on the top right of the screen. The wording is white so that it is subtle yet readable, where as the actual score is the dark blue used the same as the menu button. This allows for it to stand out but not so that it is over powering on screen.
+
+### **Final Score**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-final-score.jpg" width="250">
+</details>
+
++ Once the game has ended, and the play again page has loaded, the final score can be found towards the top of the screen. It is clear, big and bold allowing the user to see exactly what score they got.
+
+### **Barrel and apple(s) image**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-barrel-applecollection.jpg" width="250">
+
+<img src="assets/images/readme/features-barrel-apple.jpg" width="250">
+</details>
+
++ The barrel and the apple(s) is generally the main feature on every different layout throughout the game. It clearly shows the connection between the title of the game and the gameplay itself. The apples are animated giving the all important bobbing effect and on the in game page the single bobbing apple holds the all important word that the user must identify with being either real or fake. The single apple in game not only is animated but it also is draggable allowing the user to drag the apple to the relevant container.
+
+### **In-game containers**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-ingame-containers.jpg" width="250">
+</details>
+
++ These containers are where the user will drag the apple to either the real container or fake container. The images are easily identifiable with the real container being a basket of apples, which relates to an individual picking good apples and placing them into a basket. On the other side there is an image of a rubbish bin which represents where an individual would put the bad apples, in this case the fake words. To make sure that this is definitely clear for the user they both have the words real and fake next to them.
+
+### **Contact the developer**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-contact.jpg" width="250">
+
+<img src="assets/images/readme/features-contact-modal.jpg" width="250">
+</details>
+
++ At the footer of each layout will be simple text and a github icon that links to the developers github page. The text 'Contact the Developer' will link to a modal that pops up, allowing the user to send feedback about suggestions and improvements about the game.
