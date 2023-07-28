@@ -20,11 +20,12 @@ $(".btn-options").click(function() {
     // Get button ID and store this in arrayWords variable
     arrayWords = this.id;
     // For testing purposes
-    console.log(arrayWords);
+    // console.log(arrayWords);
     // Call function to load random word
     loadWords(arrayWords);
     // Call function to load gameplay display
     optionButton();
+    // Call function to play the game
     playGame();
 });
 
@@ -64,11 +65,13 @@ function playGame() {
 
             // Get the id of the droppable element
             let dragDropElement = this.id;
-            console.log(dragDropElement);
+            // For testing purposes
+            // console.log(dragDropElement);
 
             // Check if random word is correct or not
             let answer = checkAnswer(dragDropElement);
-            console.log(answer);
+            // For testing purposes
+            // console.log(answer);
 
             // Play the relevant sound depending on whether the answer is correct or not
             playSound(answer);
@@ -78,7 +81,8 @@ function playGame() {
 
             // Increment how many words have been answered
             wordCount++;
-            console.log(wordCount);
+            // For testing purposes
+            // console.log(wordCount);
 
             // Check how many words have been answered
             checkWordCount();
@@ -163,17 +167,21 @@ function returnToStart() {
  * for the chosen group of words
  */
 function loadWords(arrayWords) {
+    // Get random word from jWords array
     if (arrayWords === "jWords") {
         randomWord = jWords[Math.floor(Math.random() * jWords.length)];
+    // Get random word from vWords array
     } else if (arrayWords === "vWords") {
         randomWord = vWords[Math.floor(Math.random() * vWords.length)];
+    // Get random word from wWords array
     } else if (arrayWords === "wWords") {
         randomWord = wWords[Math.floor(Math.random() * wWords.length)];
+    // Get random word from xWords array
     } else if (arrayWords === "xWords") {
         randomWord = xWords[Math.floor(Math.random() * xWords.length)];
     }
     // For testing purposes
-    console.log(randomWord);
+    // console.log(randomWord);
 
     // Add random word to the caption div
     $(".caption").text(randomWord);
@@ -185,12 +193,14 @@ function loadWords(arrayWords) {
  */
 function checkAnswer(dragDropElement) {
     let checkWord;
+    // Check if the word is in the real words array
     if (dragDropElement === "real") {
         if (jQuery.inArray(randomWord, realWords) > -1) {
             checkWord = true;
         } else {
             checkWord = false;
         }
+    // Check if the word is in the fake words array
     } else if (dragDropElement === "fake") {
         if (jQuery.inArray(randomWord, fakeWords) > -1) {
             checkWord = true;
@@ -198,7 +208,7 @@ function checkAnswer(dragDropElement) {
             checkWord = false;
         }
     }
-
+    // Return true or false
     return checkWord;
 };
 
@@ -207,8 +217,10 @@ function checkAnswer(dragDropElement) {
  * depending on the answer
  */
 function playSound(answer) {
+    // Check if the answer is correct then play the real sound
     if (answer === true) {
         soundReal.play();
+    // Check if the answer is wrong then play the fake sound
     } else if (answer === false) {
         soundFake.play();
     }
@@ -220,6 +232,7 @@ function playSound(answer) {
  */
 function updateScore(answer) {
     let score = $("#score-number").text();
+    // Only if the answer is correct will the gameplay score be updated
     if (answer === true) {
         score++;
         $("#score-number").text(score);
@@ -231,6 +244,7 @@ function updateScore(answer) {
  * many words have been used
  */
 function checkWordCount() {
+    // Check if the word count is equal 10
     if (wordCount == 10) {
         finishGame();
     } else {
@@ -243,10 +257,12 @@ function checkWordCount() {
  * and new random word
  */
 function showApple() {
+    // Move the apple back to its original position
     $("#apple").css({
         top: "0px",
         left: "0px"
     });
+    // Show the apple but with a fade in delay
     $("#apple").delay(2000).fadeIn();
 };
 
@@ -254,23 +270,30 @@ function showApple() {
  * Function to get and show final score
  */
 function finishGame() {
+    // Get the final score from the score on the gameplay screen
     let finalScore = $("#score-number").text();
+    // Update the final score
     $("#final-score").text(finalScore);
-
+    // Change the layout from gameplay to play again
     finalScoreDisplay(); 
 };
 
 
 function resetGame() {
+    // Reset the arrayWords variable
     arrayWords = "";
-    console.log(arrayWords);
-
+    // For testing purposes
+    // console.log(arrayWords);
+    // Reset the randomWord variable
     randomWord = "";
-    console.log(randomWord);
-
+    // For testing purposes
+    // console.log(randomWord);
+    // Reset the wordCount variable
     wordCount = 0;
-    console.log(wordCount);
-
+    // For testing purposes
+    // console.log(wordCount);
+    // Set the score to zero on the actual gameplay screen
     $("#score-number").text("0");
+    // Set the final score to zero on the play again screen
     $("#final-score").text("0");
 };
