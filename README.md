@@ -524,3 +524,12 @@ The game was also tested using Chrome Developer Tools on the following setups:
 + Nest Hub Max
 
 The site performed as expected and was responsive, with all functionality and navigation working well. The surface duo was the only one device that was slightly off the mark in terms of visually, however it was still playable and navigated well.
+
+### **Browser Compatibility**
+
+The game was tested on the following browsers:
+
++ Google Chrome
++ Mozilla Firefox
+
+On these two browsers the game performed well, no issues were noticed.
