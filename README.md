@@ -607,3 +607,23 @@ The steps to deploy the live site are:
 + Locate the desired directory where you want to place the cloned directory
 + Type 'git clone' and then paste the copied URL
 + Press 'enter' to create the clone
+
+---
+
+## Credits
+
+### **Media**
+
+Apple - brgfx - https://www.freepik.com/free-vector/red-apple-with-happy-face_1909498.htm#query=apple&position=7&from_view=search&track=sph
+
+Barrel - brgfx - https://www.freepik.com/free-vector/wooden-hot-tub-spa_34086206.htm#page=2&query=barrel%20with%20water&position=37&from_view=search&track=ais
+
+Basket - Graphics RF - https://www.vecteezy.com/vector-art/433147-red-apple-in-basket
+
+Rubbish Bin - Timplaru Emil - https://www.vecteezy.com/vector-art/2006512-metallic-trash-can-vector-design-isolated-on-white-background
+
+### **Sound**
+
+Correct Answer Sound - javapimp - https://freesound.org/people/javapimp/sounds/439073/
+
+Wrong Answer Sound - phmiller42 - https://freesound.org/people/phmiller42/sounds/124996/
