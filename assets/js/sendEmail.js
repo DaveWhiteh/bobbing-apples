@@ -1,5 +1,13 @@
+// ----------------------------------------------------------------- Functions -------------------------------------------------------------- //
+
+
+// Public Key for using emailJS
 emailjs.init("iRcktNPzIIx7QSCwX");
 
+/**
+ * Function to send email via emailJS
+ * through the feedback modal
+ */
 function sendMail(contactForm) {
     emailjs.send("gmail", "bobbing-apples", {
         from_name: contactForm.name.value,
