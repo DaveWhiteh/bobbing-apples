@@ -452,3 +452,39 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 </details>
 
 + After doing the initial research before creating the game, it was easy to realise that even though there were drag and drop games for phonics that existed, there was not one that had the bobbing apples design. This was certainly one of the main reasons for this particular design as it needed to be unique. The game overall gives teachers/parents even more access to resources with a unique style, that can help them with the teaching of phonics.
+
+### **Validation**
+
+**HTML**
+
+<details>
+<summary>HTML Test - 1st Test</summary>
+<img src="assets/images/readme/html-validation-1.jpg" width="1000">
+</details>
+
+The HTML was tested using the validation site W3C HTML Validation Service. There was one error and four warnings. To resolve the error the ***href="#modal-contact"*** was removed from the button as highlighted. Also removed the ***type="text/javascript"*** from the emailJS script and then amended the section elements to divs.
+
+<details>
+<summary>HTML Test - 2nd Test</summary>
+<img src="assets/images/readme/html-validation-2.jpg" width="1000">
+</details>
+
+The HTML was tested a second time through the validation site W3C HTML Validation Service, and this time round, no errors were found.
+
+**CSS**
+
+<details>
+<summary>CSS Test</summary>
+<img src="assets/images/readme/css-validation.jpg" width="1000">
+</details>
+
+The validation site W3C CSS Validation Service was used to validate the CSS. No errors were found.
+
+**Javascript**
+
+<details>
+<summary>CSS Test</summary>
+<img src="assets/images/readme/js-validation.jpg" width="350">
+</details>
+
+The validation site jsHint was used to validate the Javascript. No errors were found.
