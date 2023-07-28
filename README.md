@@ -226,3 +226,72 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 + To include an extra layout within the game that comes after the start. This layout will show more options allowing the user to choose different phonics phases, giving the user's a more variety of options.
 
 + To include more sets within the game, this coincides with the adding of the phases. Currently the game only offers phase 3 set 6. There are actually multiple sets within phase 3, so having more phases will also mean more sets.
+
+---
+
+## Technologies Used
+
+### **Languages**
+
++ [HTML5](https://en.wikipedia.org/wiki/HTML5)
++ [CSS3](https://en.wikipedia.org/wiki/CSS)
++ [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+### **Frameworks & Libraries**
+
++ [jQuery](https://jquery.com/)
+    + used to create the logic and interaction for the game.
++ [jQuery UI](https://jqueryui.com/)
+    + used to create the draggable and droppable features in the game.
++ [jQuery UI Touch Punch](https://cdnjs.com/libraries/jqueryui-touch-punch)
+    + used to enable touch events on mobile and tablet devices.
++ [Bootstrap 5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+    + used to create the structure and layout of the website, making it responsive on all devices.
++ [Google Fonts](https://fonts.google.com/)
+    + used to get the links to the fonts that are put in the head of the html pages. These fonts are then used throughout the game.
++ [Font Awesome](https://fontawesome.com/)
+    + this was used to add icons to the project.
++ [Git](https://git-scm.com/)
+    + was used for version control in order to add, commit and push from GitPod to GitHub.
++ [GitHub](https://github.com/)
+    + is used as a repository and to host the full project.
++ [GitPod](https://www.gitpod.io/)
+    + is the IDE that is used to develop the game.
+
+### **Programs**
+
++ [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html)
+    + illustrator is used to alter the vectors that were used through the game.
++ [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html)
+    + is used to alter and resize all the images that are used within the project.
+
+### **Websites**
+
++ [Free Sound](https://freesound.org)
+    + this site was used to source the sounds used within the game.
++ [Vecteezy](https://www.vecteezy.com/)
+    + this site was used to source the vectors used within the game.
++ [Free Pik](https://www.freepik.com)
+    + this site was used to source the vectors used within the game.
++ [Convertio](https://convertio.co/)
+    + this site was used to convert the images from png to webp.
++ [Fontpair](https://www.fontpair.co/)
+    + this site was used to pair the two main fonts that are used throughout the game.
++ [Make Tints and Shades](https://maketintsandshades.com/)
+    + used to create the tints from the main colour palette for use on the game.
++ [Figma](https://www.figma.com/)
+    + used to create the wireframes and design layout for the project.
++ [Favicon](https://favicon.io/)
+    + used to create the favicon for the game pages tab.
++ [Am I Responsive?](https://ui.dev/amiresponsive)
+    + used to create the responsive mock-up image that is at the beginning of the readme file.
++ [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    + this was used throughout the whole project, from creating the site, testing the responsiveness of the site and then testing the performance.
++ [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+    + this site is used to validate the css which was used to style the game.
++ [W3C HTML Validation Service](https://validator.w3.org/)
+    + used to validate the html for the project.
++ [W3Schools](https://www.w3schools.com/)
+    + this site was used as a reference site for learning purposes.
++ [Stack Overflow](https://stackoverflow.com/)
+    + was used for seeking out answers and general learning purposes.
