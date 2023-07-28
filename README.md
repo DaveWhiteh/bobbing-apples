@@ -216,3 +216,13 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 </details>
 
 + At the footer of each layout will be simple text and a github icon that links to the developers github page. The text 'Contact the Developer' will link to a modal that pops up, allowing the user to send feedback about suggestions and improvements about the game.
+
+---
+
+## Future Features
+
++ To include a 404 page that allows for better user experience. Should something go wrong with a broken link, then it would be better for the user to be sent to a page that has the identifiable branding of the game with a link that gets them back to the start.
+
++ To include an extra layout within the game that comes after the start. This layout will show more options allowing the user to choose different phonics phases, giving the user's a more variety of options.
+
++ To include more sets within the game, this coincides with the adding of the phases. Currently the game only offers phase 3 set 6. There are actually multiple sets within phase 3, so having more phases will also mean more sets.
