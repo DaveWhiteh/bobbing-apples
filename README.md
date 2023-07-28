@@ -627,3 +627,11 @@ Rubbish Bin - Timplaru Emil - https://www.vecteezy.com/vector-art/2006512-metall
 Correct Answer Sound - javapimp - https://freesound.org/people/javapimp/sounds/439073/
 
 Wrong Answer Sound - phmiller42 - https://freesound.org/people/phmiller42/sounds/124996/
+
+---
+
+## Acknowledgements
+
++ Pasquale Fasulo and Ben Smith at Bristol City College for there understanding and patience throughout the project.
++ My mentor Rahul for his guidance and his words of wisdom.
++ The Code Institute community on Slack
