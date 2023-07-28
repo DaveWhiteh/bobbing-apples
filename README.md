@@ -10,7 +10,7 @@ The targeted audience will initially be that of a teacher or parent that will us
 
 The intended user's will benefit greatly from such a game. From a teacher's perspective they gain a new resource which they can share with there class. Having multiple resources with different styles of gameplay greatly enhances the learning experience and support that a teacher can offer there children. For the child they will benefit from having more variety in terms of the games that they can play. Bobbing Apples gives them the benefits of an easy style of play, that will give them the core basic learning of being able to identify what words are real or fake.
 
-***Click **[here]()** to view the live website.***
+***Click **[here](https://davewhiteh.github.io/bobbing-apples/)** to view the live website.***
 
 ---
 
