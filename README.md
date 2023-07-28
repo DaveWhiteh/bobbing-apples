@@ -1,5 +1,7 @@
 # Bobbing Apples
 
+![Bobbing Apples Responsive Mock-up](assets/images/readme/responsive-mockup.jpg)
+
 ---
 
 ## About
