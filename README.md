@@ -533,3 +533,25 @@ The game was tested on the following browsers:
 + Mozilla Firefox
 
 On these two browsers the game performed well, no issues were noticed.
+
+### **Performance**
+
+The game was put through a performance test using Google Chrome Developer Tools Lighthouse test.
+
+**Desktop**
+
+<details>
+<summary>Desktop Test - 1st Attempt</summary>
+<img src="assets/images/readme/performance-desktop.jpg" width="500">
+</details>
+
+The game performed well in the Lighthouse test for the desktop.
+
+**Mobile**
+
+<details>
+<summary>Mobile Test - 2nd Attempt</summary>
+<img src="assets/images/readme/performance-mobile.jpg" width="500">
+</details>
+
+The game performance dipped slightly for mobile device on the first test. The score for performance was only 86. To get a better performance for mobile the jQuery CDN script was changed to a minified version. This helped raise the performance quite a bit on the second test.
