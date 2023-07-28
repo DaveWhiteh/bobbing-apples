@@ -235,7 +235,7 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .options-container {
-        top: 28%;
+        top: 35%;
     }
 
     .caption {
@@ -252,12 +252,16 @@ https://www.geeksforgeeks.org/css-floating-animation/
     }
 
     .image-gameplay {
-        width: 75%;
+        width: 60%;
     }
 
     .apple-container {
         width: 75%;
         margin: 0 auto;
+    }
+
+    .text-footer {
+        font-size: 0.8rem;
     }
 
 }
