@@ -295,3 +295,160 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
     + this site was used as a reference site for learning purposes.
 + [Stack Overflow](https://stackoverflow.com/)
     + was used for seeking out answers and general learning purposes.
+
+---
+
+## Testing
+
+### **Testing User Stories**
+
+**As a potential teacher/parent user:**
+
+**I want to clearly identify the instructions on how to play the game**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-instructions-start.jpg" width="250">
+</details>
+
++ When the game is first loaded just underneath the main header the user will immediately see the instructions that are clear and concise.
+
+**I want to be able to choose between all the different sounds that are intended for phonics phase 3 set 6**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-button-options.jpg" width="250">
+</details>
+
++ After the user presses start they are then given four buttons. These buttons represent the four sounds that are in phase 3 set 6 for phonics. They are bright and central allowing the user to easily identify with what they must do to choose the sound they would like to play.
+
+**I want the game to be simple and engaging so that the game instructions can be explained easily to young children**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/us-simple-engaging-1.jpg" width="350">
+
+<img src="assets/images/readme/us-simple-engaging-2.jpg" width="350">
+</details>
+
++ The game from the very outset shouts out simple, yet engaging, with the use of bright primary colours and easy to read fonts. The instructions are easy to follow so that the teacher/parent can easily explain to there younger audience on how to play the game. The minimilistic gameplay means the actual in game layout has a simplistic style, making sure that the screen is not busy so that the younger user can easily play the game without being overwhelmed or distracted at any point during gameplay.
+
+**I want the game to be short due to the attention span of the attended audience**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/us-game-short-1.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-2.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-3.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-4.jpg" width="350">
+</details>
+
++ From the beginning to the end of the game is setup to be easy to follow for all users. From starting the game, choosing the options, the actual gameplay and the play again screen, all layouts have been setup to navigate through with very few clicks required. The gameplay itself has been kept to a 10 questions maximum in order to keep things short and quick.
+
+**I want the option to be able to play again after each game has ended**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/us-game-short-4.jpg" width="350">
+</details>
+
++ Once the game has ended the user is presented with a different layout showing them a centralised button that allows the user to click 'play again' to go back to the start of the game. From a parent/teacher perspective this allows for them to quickly setup a new game for another user and keeps all interactiveness on screen, meaning they won't need to refresh the actual web page which would adopt a poor user experience.
+
+**As a potential 4-5 year old user:**
+
+**I want to learn the new phonics words that have been chosen**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-barrel-apple.jpg" width="250">
+</details>
+
++ When the younger user plays the game they will immediately see the red floating apple in the middle of the screen. This apple contains the random word that the user must identify with being either a real word or fake.
+
+**I want the game to be quick and simple to play**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-barrel-apple.jpg" width="250">
+</details>
+
++ The game play has been created to make sure that not only is it simple to follow with an easy draggable design but also quick. Due to the younger audience having a short attention span, the words have been limited to 10 for this reason.
+
+**I want to clearly be made aware if an answer was correct or incorrect**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-ingame-score.jpg" width="250">
+
+<audio src="assets/sounds/real.mp3" controls title="Correct Sound"></audio>
+
+<audio src="assets/sounds/fake.mp3" controls title="Wrong Sound"></audio>
+</details>
+
++ This has been approached in two ways. The user will be able to see that they got the answer right or wrong by the score that is kept on the in-game screen. The other is the sound that is played once the user drops the apple onto the chosen container. If they have chosen correctly then they will be played the real sound and if they got the answer wrong they will be played the fake sound.
+
+**I want to see what score was achieved at the end of the game**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-final-score.jpg" width="250">
+</details>
+
++ Once the user finishes the game they will be presented with a new layout that will show them, in big and bold, the score that they got.
+
+**As the site owner:**
+
+**I want to create an interactive game that will aide with the teaching of phonics to children**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/us-game-short-1.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-2.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-3.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-4.jpg" width="350">
+</details>
+
++ The game created is definitely interactive. Offering the user to engage at each point throughout the game, whether that is clicking buttons to navigate or dragging and dropping elements to get a response. The game has been kept simple but importantly allows both sets of users to benefit from learning new sounds and to help aide the teaching of phonics.
+
+**I want the game to be fun and engaging with an appealing display with the use of bright bold colours**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-barrel-apple.jpg" width="250">
+
+<img src="assets/images/readme/features-button-options.jpg" width="250">
+
+<img src="assets/images/readme/features-ingame-containers.jpg" width="250">
+</details>
+
++ The game has been setup with a simplistic design, with subtle but affective animations and an interative approach with the dragging and dropping feature. All these features add to the fun side of playing the game. Having the look of the game take a bold approach with the use of primary colours and easy worded instructions also enhances the engagement of the game.
+
+**I want to give the user the opportunity to provide feedback about the game**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-contact-modal.jpg" width="250">
+</details>
+
++ At the footer of the game there is the 'Contact the developer' link which when clicked will open a modal in the middle of the page. This allows the user to send feedback or even suggestions about how the game could be improved, or any bugs that they may encounter.
+
+**I want to provide a unique game for teachers so that they have access to even more variety of unique games to help teach phonics**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/us-game-short-1.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-2.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-3.jpg" width="350">
+
+<img src="assets/images/readme/us-game-short-4.jpg" width="350">
+</details>
+
++ After doing the initial research before creating the game, it was easy to realise that even though there were drag and drop games for phonics that existed, there was not one that had the bobbing apples design. This was certainly one of the main reasons for this particular design as it needed to be unique. The game overall gives teachers/parents even more access to resources with a unique style, that can help them with the teaching of phonics.
