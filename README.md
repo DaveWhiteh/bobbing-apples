@@ -488,3 +488,39 @@ The validation site W3C CSS Validation Service was used to validate the CSS. No 
 </details>
 
 The validation site jsHint was used to validate the Javascript. No errors were found.
+
+### **Responsiveness**
+
+**Live**
+
+The game was tested on the following live devices:
++ **iiyama desktop monitor - 1920x1080 resolution**
+    + the game performed well on a desktop, running smoothly throughout.
++ **Google Pixel 5**
+    + the game was tested thoroughly on this mobile device. The game is smooth and responsive throughout on both orientations. There was an issue early on whereby when dragging the apple to one of the containers it was quite sluggish (for details please click [here](#sluggish-when-dragging-apple)).
++ **Google Pixel 6a**
+    + this mobile device was used to test by a different user. They commented on how easy the game was to play and how visually it looks great that would definitely appeal to a younger audience.
++ **Amazon Fire Tablet HD**
+    + the game was tested on this tablet and worked very well. Very responsive, looked good in both orientations and was smooth thoughout.
++ **iPhone 11**
+    + playing the game on an iphone worked well. Good visuals and simple to understand and play. There is an issue regarding the sound on the iphone. It did not play the real or fake sounds when required (for details please click [here](#no-sound-on-iphone)).
+
+**Simulation**
+
+The game was also tested using Chrome Developer Tools on the following setups:
++ iPhone SE
++ iPhone XR
++ iPhone 12 Pro
++ Pixel 5
++ Samsung Galaxy S8+
++ Samsung Galazy S20 Ultra
++ Galaxy Fold
++ Samsung Galaxy A51/71
++ iPad Air
++ iPad Mini
++ Surface Pro 7
++ Surface Duo
++ Nest Hub
++ Nest Hub Max
+
+The site performed as expected and was responsive, with all functionality and navigation working well. The surface duo was the only one device that was slightly off the mark in terms of visually, however it was still playable and navigated well.
