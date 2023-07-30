@@ -4,6 +4,49 @@
 
 ---
 
+## Table of Contents
+
+1. [About](#about)
+2. [User Experiences (UX)](#user-experiences-ux)
+    + [User Stories](#user-stories)
+    + [Strategy](#strategy)
+    + [Scope](#scope)
+    + [Structure](#structure)
+    + [Skeleton](#skeleton)
+    + [Surface](#Surface)
+3. [Features](#features)
+    + [Main Header](#main-header)
+    + [Instructions](#instructions)
+    + [Buttons](#buttons)
+    + [Current Score](#current-score)
+    + [Final Score](#final-score)
+    + [Barrel and Apple(s) Image](#barrel-and-apple(s)-image)
+    + [In-game Containers](#in-game-containers)
+    + [Contact the Developer](#contact-the-developer)
+4. [Future Features](#future-features)
+5. [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Frameworks & Libraries](#frameworks--libraries)
+    + [Programs](#programs)
+    + [Websites](#websites)
+6. [Testing](#testing)
+    + [Testing User Stories](#testing-user-stories)
+    + [Validation](#validation)
+    + [Responsiveness](#responsiveness)
+    + [Browser Compatibility](#browser-compatibility)
+    + [Performance](#performance)
+    + [Bugs and Fixes](#bugs-and-fixes)
+7. [Deployment](#deployment)
+    + [GitHub Pages](#github-pages)
+    + [Forking the GitHub Repository](#forking-the-github-repository)
+    + [Cloning the GitHub Repository](#cloning-the-github-repository)
+8. [Credits](#credits)
+    + [Media](#media)
+    + [Sound](#sound)
+9. [Acknowledgements](#acknowledgements)
+
+---
+
 ## About
 
 Bobbing Apples is a basic web based JavaScript game. A game designed to help with the support and development for teaching and learning phonics to children in early years. The game adopts a simple approach with an appealing colour scheme that will allow for the ideal user experience for a young target audience.
