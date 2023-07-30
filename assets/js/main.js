@@ -1,19 +1,22 @@
 // ----------------------------------------------------------------- Variables --------------------------------------------------------------- //
 
 
-let arrayWords = "";
-let randomWord = "";
+let arrayWords;
+let randomWord;
 let wordCount = 0;
-
-const soundReal = new Audio("assets/sounds/real.mp3");
-const soundFake = new Audio("assets/sounds/fake.mp3");
 
 
 // ------------------------------------------------------------------ Events ----------------------------------------------------------------- //
 
 
-// On click event for start button to change display to options layout
-$("#options-1-start").on("click", startButton);
+// On click event for start button to change display to options layout and to enable sounds
+$("#options-1-start").click(function() {
+    // Enable sounds
+    enable_audio($('#audio-real'));
+    enable_audio($('#audio-fake'));
+    // Change display to options layout
+    startButton();
+});
 
 // On click event for the four option buttons to initiate function
 $(".btn-options").click(function() {
@@ -163,6 +166,24 @@ function returnToStart() {
 };
 
 /**
+ * Function to load the sounds for use with ios
+ * There is a limitation with ios that does not allow for autoplay of audio on sites
+ * To get around this I was able to search for a solution on stack overflow
+ * https://stackoverflow.com/questions/48405744/play-audio-on-drag-and-drop-in-mobile-browsers
+ * Incorporate the solution from user 'Munim Munna'
+ */
+function enable_audio(ea) {
+    let myaudio = ea[0];
+    if(ea.data('audio_enabled'))return;
+    myaudio.volume = 0.0;
+    myaudio.play().then(function() {
+      myaudio.pause();
+      myaudio.load();
+    });
+    ea.data('audio_enabled',true);
+  }
+
+/**
  * Function to load a random word
  * for the chosen group of words
  */
@@ -219,10 +240,12 @@ function checkAnswer(dragDropElement) {
 function playSound(answer) {
     // Check if the answer is correct then play the real sound
     if (answer === true) {
-        soundReal.play();
+      $("#audio-real")[0].volume = 0.5;
+      $("#audio-real")[0].play();
     // Check if the answer is wrong then play the fake sound
     } else if (answer === false) {
-        soundFake.play();
+      $("#audio-fake")[0].volume = 0.5;
+      $("#audio-fake")[0].play();
     }
 };
 
