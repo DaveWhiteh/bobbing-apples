@@ -576,6 +576,14 @@ This was an issue picked up in early testing.
 <img src="assets/images/readme/bugsfixes-applesluggish-resolution.jpg" width="350">
 </details>
 
+#### **No sound on iphone**
+
+This issue was noticed when testing the game on both an iphone and ipad.
+
+***Issue/Feature*** - This issue has occurred because ios have blocked autoplay for audio.
+
+***Resolution*** - A soltuion was found by doing some reasearch and coming across different articles that all pointed to relatively the same solution which is a bit of a hack. The audio requires pre loading which must come from a click event. I followed a solution from stack overflow which can be found [here](https://stackoverflow.com/questions/48405744/play-audio-on-drag-and-drop-in-mobile-browsers). The changes to the code that were made, can be found [here](https://github.com/DaveWhiteh/bobbing-apples/commit/83c304382263e178f75edbd447bf2f241784cc89).
+
 ---
 
 ## Deployment
