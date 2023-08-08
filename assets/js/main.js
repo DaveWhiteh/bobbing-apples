@@ -288,12 +288,16 @@ function playAnimation(answer, dragDropElement) {
 function playSound(answer) {
     // Check if the answer is correct then play the real sound
     if (answer === true) {
-      $("#audio-real")[0].volume = 0.5;
-      $("#audio-real")[0].play();
+      setTimeout(function() {
+        $("#audio-real")[0].volume = 0.5;
+        $("#audio-real")[0].play();
+      }, 1000);
     // Check if the answer is wrong then play the fake sound
     } else if (answer === false) {
-      $("#audio-fake")[0].volume = 0.5;
-      $("#audio-fake")[0].play();
+      setTimeout(function() {
+        $("#audio-fake")[0].volume = 0.5;
+        $("#audio-fake")[0].play();
+      }, 1000);
     }
 };
 
