@@ -35,7 +35,7 @@ $(".btn-options").click(function() {
 // On click event for home button to reset game and change display
 $("#btn-instructions-home").click(function() {
     // Return to the options layout display
-    returnToMenu();
+    returnToHome();
     // Reset the game variables
     resetGame();
 });
@@ -131,11 +131,12 @@ function optionButton() {
  * Function to change the game display
  * from the gameplay back to the options layout
  */
-function returnToMenu() {
+function returnToHome() {
     $("#instructions-3").hide();
     $("#gameplay-2").hide();
-    $("#instructions-2").show();
-    $("#options-2").show();
+    $("#game-header").show();
+    $("#instructions-1").show();
+    $("#options-1").show();
     $("#gameplay-1").show();
 };
 
