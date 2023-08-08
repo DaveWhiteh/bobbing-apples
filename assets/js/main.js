@@ -338,7 +338,7 @@ function showApple() {
         left: "0px"
     });
     // Show the apple but with a fade in delay
-    $("#apple").delay(2000).fadeIn();
+    $("#apple").delay(3500).fadeIn();
 };
 
 /**
