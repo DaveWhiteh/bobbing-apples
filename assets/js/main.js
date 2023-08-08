@@ -148,13 +148,15 @@ function returnToHome() {
  * from the gameplay to the final score layout
  */
 function finalScoreDisplay() {
-    $("#gameplay-2").hide();    
-    $("#instructions-3").hide();
-    $("#instructions-4").removeClass("d-none");
-    $("#instructions-4").show();
-    $("#options-3").removeClass("d-none");
-    $("#options-3").show();
-    $("#gameplay-1").show();   
+    setTimeout(function() {
+        $("#gameplay-2").hide();    
+        $("#instructions-3").hide();
+        $("#instructions-4").removeClass("d-none");
+        $("#instructions-4").show();
+        $("#options-3").removeClass("d-none");
+        $("#options-3").show();
+        $("#gameplay-1").show();
+    }, 3000);
 };
 
 /**
