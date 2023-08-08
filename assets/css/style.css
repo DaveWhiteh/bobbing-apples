@@ -133,6 +133,18 @@ h1 {
     width: 100%;
 }
 
+#real,
+#fake {
+    position: relative;
+}
+
+.answer-success,
+.answer-wrong {
+    position: absolute;
+    z-index: 1;
+    bottom: -20%;
+}
+
 /* --------------------------------------------------------------------------------------- Footer */
 
 .footer-container {
@@ -169,6 +181,75 @@ https://www.geeksforgeeks.org/css-floating-animation/
 
     100% {
         transform: translate(0, -0px);
+    }
+}
+
+/* 
+The animated tick and cross checkboxes were found at 
+https://codepen.io/elevaunt/pen/VvKdVa
+These have been modified to suit this game.
+*/
+
+svg {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+}
+
+.cross {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 2s .75s ease-in-out forwards;
+    animation: dash 2s .75s ease-in-out forwards;
+}
+
+.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 2s .75s ease-in-out forwards;
+    animation: dash-check 2s .75s ease-in-out forwards;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
     }
 }
 
@@ -316,6 +397,19 @@ https://www.geeksforgeeks.org/css-floating-animation/
 
     #score {
         font-size: 2.5rem;
+    }
+
+    .answer-success,
+    .answer-wrong {
+        bottom: -10%;
+    }
+
+    .real-margin {
+        margin-right: 3rem;
+    }
+
+    .fake-margin {
+        margin-left: 3rem;
     }
 
 }
