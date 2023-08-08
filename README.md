@@ -334,6 +334,8 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
     + this site is used to validate the css which was used to style the game.
 + [W3C HTML Validation Service](https://validator.w3.org/)
     + used to validate the html for the project.
++ [jsHint](https://jshint.com/)
+    + used to validate the javascript for the project.
 + [W3Schools](https://www.w3schools.com/)
     + this site was used as a reference site for learning purposes.
 + [Stack Overflow](https://stackoverflow.com/)
