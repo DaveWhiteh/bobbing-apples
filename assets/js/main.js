@@ -76,6 +76,9 @@ function playGame() {
             // For testing purposes
             // console.log(answer);
 
+            // Animate the tick and cross on real or fake container
+            playAnimation(answer, dragDropElement);
+
             // Play the relevant sound depending on whether the answer is correct or not
             playSound(answer);
 
@@ -232,6 +235,50 @@ function checkAnswer(dragDropElement) {
     }
     // Return true or false
     return checkWord;
+};
+
+/**
+ * Function to show the relevant animated
+ * tick or cross on top of container
+ */
+function playAnimation(answer, dragDropElement) {
+    if (answer === true) {
+        if (dragDropElement === "real") {
+            $("#real .answer-success").removeClass("d-none");
+            $("#real .answer-success").show();
+            $("#success-animation").addClass("check");
+            setTimeout(function() {
+                $("#success-animation").removeClass("check");
+                $("#real .answer-success").hide();
+            }, 3000);
+        } else if (dragDropElement === "fake") {
+            $("#fake .answer-success").removeClass("d-none");
+            $("#fake .answer-success").show();
+            $("#success-animation").addClass("check");
+            setTimeout(function() {
+                $("#success-animation").removeClass("check");
+                $("#fake .answer-success").hide();
+            }, 3000);
+        }
+    } else if (answer === false) {
+        if (dragDropElement === "real") {
+            $("#real .answer-wrong").removeClass("d-none");
+            $("#real .answer-wrong").show();
+            $("#wrong-animation").addClass("cross");
+            setTimeout(function() {
+                $("#wrong-animation").removeClass("cross");
+                $("#real .answer-wrong").hide();
+            }, 3000);
+        } else if (dragDropElement === "fake") {
+            $("#fake .answer-wrong").removeClass("d-none");
+            $("#fake .answer-wrong").show();
+            $("#wrong-animation").addClass("cross");
+            setTimeout(function() {
+                $("#wrong-animation").removeClass("cross");
+                $("#fake .answer-wrong").hide();
+            }, 3000);
+        }
+    }
 };
 
 /**
