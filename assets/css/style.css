@@ -133,18 +133,6 @@ h1 {
     width: 100%;
 }
 
-#real,
-#fake {
-    position: relative;
-}
-
-.answer-success,
-.answer-wrong {
-    position: absolute;
-    z-index: 1;
-    bottom: -20%;
-}
-
 /* --------------------------------------------------------------------------------------- Footer */
 
 .footer-container {
@@ -397,19 +385,6 @@ svg {
 
     #score {
         font-size: 2.5rem;
-    }
-
-    .answer-success,
-    .answer-wrong {
-        bottom: -10%;
-    }
-
-    .real-margin {
-        margin-right: 3rem;
-    }
-
-    .fake-margin {
-        margin-left: 3rem;
     }
 
 }
