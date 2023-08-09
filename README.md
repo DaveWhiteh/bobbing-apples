@@ -444,7 +444,7 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 <audio src="assets/sounds/fake.mp3" controls title="Wrong Sound"></audio>
 </details>
 
-+ This has been approached in two ways. The user will be able to see that they got the answer right or wrong by the score that is kept on the in-game screen. The other is the sound that is played once the user drops the apple onto the chosen container. If they have chosen correctly then they will be played the real sound and if they got the answer wrong they will be played the fake sound.
++ This has been approached in three ways. The user will be able to see that they got the answer right or wrong by the score that is kept on the in-game screen. The other way is the sound that is played once the user drops the apple onto the chosen container. If they have chosen correctly then they will be played the real sound and if they got the answer wrong they will be played the fake sound. Lastly the user will be shown a green tick above the barrel, if they got the answer correct and a red cross should they get the answer wrong.
 
 **I want to see what score was achieved at the end of the game**
 
@@ -638,7 +638,7 @@ This issue was noticed when testing the game on both an iphone and ipad.
 
 ***Issue/Feature*** - This issue has occurred because ios have blocked autoplay for audio.
 
-***Resolution*** - A soltuion was found by doing some reasearch and coming across different articles that all pointed to relatively the same solution which is a bit of a hack. The audio requires pre loading which must come from a click event. I followed a solution from stack overflow which can be found [here](https://stackoverflow.com/questions/48405744/play-audio-on-drag-and-drop-in-mobile-browsers). The changes to the code that were made, can be found [here](https://github.com/DaveWhiteh/bobbing-apples/commit/83c304382263e178f75edbd447bf2f241784cc89).
+***Resolution*** - A solution was found by doing some reasearch and coming across different articles that all pointed to relatively the same solution which is a bit of a hack. The audio requires pre loading which must come from a click event. I followed a solution from stack overflow which can be found [here](https://stackoverflow.com/questions/48405744/play-audio-on-drag-and-drop-in-mobile-browsers). The changes to the code that were made, can be found [here](https://github.com/DaveWhiteh/bobbing-apples/commit/83c304382263e178f75edbd447bf2f241784cc89).
 
 ---
 
