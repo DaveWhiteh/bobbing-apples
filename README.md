@@ -220,6 +220,17 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 
 + The score can be found on the in game page that features on the top right of the screen. The wording is white so that it is subtle yet readable, where as the actual score is the dark blue used the same as the menu button. This allows for it to stand out but not so that it is over powering on screen.
 
+### **Correct / Wrong Answer**
+
+<details>
+<summary>Screenshots</summary>
+<img src="assets/images/readme/features-answer-correct.jpg" width="250">
+
+<img src="assets/images/readme/features-answer-wrong.jpg" width="250">
+</details>
+
++ When the user drags the apple to the chosen container, the answer will be evaluated. If the answer is correct a green tick will appear above the barrel image and a sound will be played to represent a correct answer. If the answer is wrong then a red cross will appear and a sound that represents a wrong answer will play instead.
+
 ### **Final Score**
 
 <details>
