@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bobbing Apples is an interactive educational web based phonics game.">
+
+    <title>Bobbing Apples</title>
+
+    <!-- Favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" crossorigin="use-credentials">
+    <!-- Bootstrap 5.2 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <!-- jQuery UI CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- emailJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- 404 text starts -->
+    <div id="404-text">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="text-ins text-green text-bold mt-3 mb-0">Uh oh... you seemed to have lost your way.
+                    </p>
+                    <p class="text-ins text-green text-bold mb-3">Let's see if we can get you back to a more
+                        familiar setting.
+                    </p>
+                    <p class="text-ins text-blue text-bold">Please click the button below.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 404 text ends -->
+
+    <!-- 404 button starts -->
+    <div id="404" class="options-container">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <button type="button" id="btn-404" class="btn btn--cta btn--yellow btn-lg">
+                        <a class="btn-404 text-blue text-bold" href="index.html" aria-label="Go to start">Home</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 404 button ends -->
+
+    <!-- feedback starts -->
+    <div class="modal fade" id="modal-contact" tabindex="-1" aria-labelledby="modal-contact-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 text-blue text-bold" id="modal-contact-label">Contact the Developer</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contact" onsubmit="return sendMail(this);">
+                        <p>Please get in touch with any feedback or suggestions on how this game could be improved.</p>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="fullname" name="name" placeholder="Name"
+                                aria-label="Enter name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="email" class="form-control" id="emailaddress" name="emailaddress"
+                                placeholder="Email Address" aria-label="Enter email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea class="form-control" id="message" name="message" placeholder="Message"
+                                aria-label="Enter message" rows="7" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feedback ends -->
+    
+    <!-- feedback success starts -->
+    <div class="modal" id="modal-contact-success" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title text-blue text-bold">Success</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Your message has been sent successfully.</p>
+              <p>Thankyou for your feedback.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- feedback success ends -->
+
+    <!-- feedback fail starts -->
+    <div class="modal" id="modal-contact-fail" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title text-blue text-bold">Fail</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Your message has failed to send.</p>
+              <p>Please try again.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contact">Retry</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- feedback fail ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container-fluid footer-container">
+            <div class="row">
+                <div class="col text-center">
+                    <a id="btn-contact" class="text-footer text-extra-bold text-blue" href="#modal-contact" data-bs-toggle="modal" data-bs-target="#modal-contact">
+                        Contact the Developer
+                    </a>
+                    <a class="text-footer text-extra-bold text-blue" href="https://github.com/davewhiteh" aria-label="Link to the developers GitHub page" rel="noreferrer noopener" 
+                    target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- jQuery UI script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!-- jQuery UI Touch Punch script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- Bootstrap 5.2 script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
