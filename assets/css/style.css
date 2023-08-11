@@ -17,6 +17,7 @@ h1 {
 
 .text-header {
     font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .text-ins {
@@ -294,6 +295,7 @@ svg {
     
     .text-header {
         font-size: 2.5rem;
+        margin-top: 0.5rem;
     }
     
     .text-ins {
@@ -312,7 +314,7 @@ svg {
     }
 
     .options-container {
-        top: 35%;
+        top: 38%;
     }
 
     .caption {
@@ -329,11 +331,11 @@ svg {
     }
 
     .image-gameplay {
-        width: 60%;
+        width: 50%;
     }
 
     .apple-container {
-        width: 75%;
+        width: 60%;
         margin: 0 auto;
     }
 
