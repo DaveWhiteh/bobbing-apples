@@ -192,9 +192,11 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 <img src="assets/images/readme/features-instructions-start.jpg" width="250">
 
 <img src="assets/images/readme/features-instructions-options.jpg" width="250">
+
+<img src="assets/images/readme/features-instructions-gameplay.jpg" width="250">
 </details>
 
-+ The instructions can be found at the top of the page, again utilising the primary blue colour, setting the tone for consistency and using the font mulish that is easily readable for both sets of users. The main user at this point will be that of an older user who will clearly be able to understand the instructions and easily be able to explain this to their younger audience.
++ The instructions can be found at the top of the page, again utilising the primary blue and green colours, setting the tone for consistency and using the font mulish that is easily readable for both sets of users. The instructions for the actual gameplay will be shown in a modal that will feature at the start of the game. The main user at this point will be that of an older user who will clearly be able to understand the instructions and easily be able to explain this to their younger audience.
 
 ### **Buttons**
 
