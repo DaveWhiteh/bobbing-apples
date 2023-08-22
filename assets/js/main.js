@@ -30,6 +30,8 @@ $(".btn-options").click(function() {
     optionButton();
     // Call function to play the game
     playGame();
+    // Show how to play modal
+    $("#modal-instructions-gameplay").modal('show');
 });
 
 // On click event for home button to reset game and change display
