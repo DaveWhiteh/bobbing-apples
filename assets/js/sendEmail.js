@@ -16,13 +16,19 @@ function sendMail(contactForm) {
     })
         .then(
             function(response) {
-                console.log("SUCCESS", response.status, response.text);
+                // For testing purposes
+                //console.log("SUCCESS", response.status, response.text);
+                // Hide modal-contact
                 $("#modal-contact").modal('hide');
+                // Show modal-contact-success upon email success
                 $("#modal-contact-success").modal('show');
             },
             function(error) {
-                console.log("FAILED", error);
+                // For testing purposes
+                //console.log("FAILED", error);
+                // Hide modal-contact
                 $("#modal-contact").modal('hide');
+                // Show modal-contact-fail upon email fail
                 $("modal-contact-fail").modal('show');
             }
         );
