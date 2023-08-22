@@ -364,10 +364,10 @@ Only one icon to be used which was from [Font Awesome](https://fontawesome.com/)
 
 <details>
 <summary>Screenshots</summary>
-<img src="assets/images/readme/features-instructions-start.jpg" width="250">
+<img src="assets/images/readme/features-instructions-gameplay.jpg" width="250">
 </details>
 
-+ When the game is first loaded just underneath the main header the user will immediately see the instructions that are clear and concise.
++ When the actual gameplay starts a modal features in the centre of the screen where the user will immediately see the instructions that are clear and concise.
 
 **I want to be able to choose between all the different sounds that are intended for phonics phase 3 set 6**
 
